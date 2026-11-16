@@ -26,7 +26,7 @@ const SITE = {
 ------------------------------------------------------------ */
 const PROJECTS = [
   { title: 'INJECTIER', cat: 'Commercial', year: '2026', vimeo: '1201272000', thumb: 'thumbs/01.webp' },
-  { title: '디어페미닌', cat: 'Commercial', year: '2026', vimeo: '922497237', thumb: 'thumbs/02.png' },
+  { title: '디어페미닌', cat: 'Commercial', year: '2026', vimeo: '922497237', thumb: 'thumbs/02.webp' },
   // 예시 — 앞의 // 를 지우고 내용을 바꿔 쓰세요
   // { title: '새 프로젝트', cat: '3D', year: '2026', vimeo: 'https://vimeo.com/manage/videos/922497237', thumb: 'thumbs/02.jpg' },
 ];
