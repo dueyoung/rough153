@@ -13,7 +13,7 @@ const SITE = {
   email: 'hello@example.com',
   vimeo: 'https://vimeo.com/',
   instagram: 'https://www.instagram.com/',
-  accent: '#c8ff3c',      // 강조색 (버튼, 포인트 컬러)
+  accent: '#2b4bff',      // 강조색 (버튼, 포인트 컬러)
   pageSize: 12            // 처음에 보여줄 프로젝트 수 (나머지는 '더 보기' 버튼)
 };
 
