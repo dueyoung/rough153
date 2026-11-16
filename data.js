@@ -4,7 +4,7 @@
 
 /* ---------- 사이트 기본 정보 ---------- */
 const SITE = {
-  name: 'ROUGH3',
+  name: 'ROUGH4',
   tagline: 'Motion Graphics · 3D · Title Design',
   headline: 'We move<br>stories forward.',
   intro: '움직임으로 브랜드의 이야기를 전하는 모션그래픽 디자이너입니다.',
