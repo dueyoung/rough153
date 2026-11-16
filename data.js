@@ -4,7 +4,7 @@
 
 /* ---------- 사이트 기본 정보 ---------- */
 const SITE = {
-  name: 'ROUGH1',
+  name: 'ROUGH2',
   tagline: 'Motion Graphics · 3D · Title Design',
   headline: 'We move<br>stories forward.',
   intro: '움직임으로 브랜드의 이야기를 전하는 모션그래픽 디자이너입니다.',
@@ -28,5 +28,5 @@ const PROJECTS = [
   { title: 'INJECTIER', cat: 'Commercial', year: '2026', vimeo: '1201272000', thumb: 'thumbs/01.webp' },
   { title: '디어페미닌', cat: 'Commercial', year: '2026', vimeo: '922497237', thumb: 'thumbs/02.png' },
   // 예시 — 앞의 // 를 지우고 내용을 바꿔 쓰세요
-  // { title: '새 프로젝트', cat: '3D', year: '2026', vimeo: '1234567890', thumb: 'thumbs/02.jpg' },
+  // { title: '새 프로젝트', cat: '3D', year: '2026', vimeo: 'https://vimeo.com/manage/videos/922497237', thumb: 'thumbs/02.jpg' },
 ];
