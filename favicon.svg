@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .mark { fill: #000; stroke: #000; }
+    @media (prefers-color-scheme: dark) { .mark { fill: #fff; stroke: #fff; } }
+  </style>
+  <circle class="mark" cx="256" cy="256" r="219" fill="none" stroke-width="62" style="fill:none"/>
+  <circle class="mark" cx="320" cy="322" r="90" stroke="none" style="stroke:none"/>
+</svg>

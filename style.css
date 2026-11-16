@@ -25,7 +25,8 @@ h1, h2, p { margin: 0; }
 
 /* header */
 .site-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 32px 0; }
-.logo { font-family: var(--display); font-weight: 700; font-size: 20px; letter-spacing: -0.01em; }
+.logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; font-size: 20px; letter-spacing: -0.01em; }
+.logo-icon { width: 28px; height: 28px; object-fit: contain; display: block; } /* 로고 아이콘 크기 */
 .site-header nav { display: flex; gap: 28px; font-size: 15px; }
 
 /* hero */
