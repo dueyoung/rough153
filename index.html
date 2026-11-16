@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motion Portfolio</title>
+  <meta name="description" content="Motion graphics portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a href="#top" class="logo" data-site="name"></a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="top" class="hero">
+      <p class="eyebrow" data-site="tagline"></p>
+      <h1 data-site-html="headline"></h1>
+      <p class="intro" data-site="intro"></p>
+    </section>
+
+    <section id="work" class="work">
+      <div class="section-head">
+        <h2>Selected Work</h2>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <button class="more" id="more" hidden>더 보기</button>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <div>
+        <p data-site="about"></p>
+        <p class="muted">Clients — <span data-site="clients"></span></p>
+      </div>
+    </section>
+
+    <footer id="contact" class="site-footer">
+      <a class="big-cta" id="mail">Let’s make<br>something move →</a>
+      <div class="foot-row">
+        <span>© <span id="year"></span> <span data-site="name"></span></span>
+        <div class="links">
+          <a id="vimeoLink" target="_blank" rel="noopener">Vimeo</a>
+          <a id="instaLink" target="_blank" rel="noopener">Instagram</a>
+          <a id="mail2"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <dialog id="player" aria-label="영상 보기">
+    <button class="close" id="close" aria-label="닫기">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="player-inner">
+      <div class="video" id="video"></div>
+      <div class="player-meta">
+        <div>
+          <strong id="pTitle"></strong>
+          <span id="pMeta"></span>
+        </div>
+        <a id="pLink" target="_blank" rel="noopener">Vimeo에서 보기 ↗</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
