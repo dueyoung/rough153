@@ -4,14 +4,14 @@
 
 /* ---------- 사이트 기본 정보 ---------- */
 const SITE = {
-  name: 'ROUGH4',
+  name: 'ROUGH',
   tagline: 'Motion Graphics · 3D · Title Design',
   headline: 'We move<br>stories forward.',
   intro: '움직임으로 브랜드의 이야기를 전하는 모션그래픽 디자이너입니다.',
   about: 'After Effects, Cinema 4D',
   clients: '[CLIENT A], [CLIENT B], [CLIENT C]',
-  email: 'hello@example.com',
-  vimeo: 'https://vimeo.com/',
+  email: 'heaven_153@naver.com',
+  vimeo: 'https://vimeo.com/zinz77?fl=pl&fe=po',
   instagram: 'https://www.instagram.com/',
   accent: '#2b4bff',      // 강조색 (버튼, 포인트 컬러)
   pageSize: 12            // 처음에 보여줄 프로젝트 수 (나머지는 '더 보기' 버튼)
