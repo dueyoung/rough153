@@ -33,7 +33,7 @@
       <button class="thumb" data-idx="${PROJECTS.indexOf(p)}" style="animation-delay:${(i % 12) * 60}ms" aria-label="${esc(p.title)} 영상 보기">
         <div class="frame">
           ${p.thumb ? `<img src="${esc(p.thumb)}" alt="" loading="lazy">` : `<div class="noimg">NO THUMBNAIL</div>`}
-          <div class="play"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#0d0d0d"/></svg></div>
+          <div class="play"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></div>
         </div>
         <div class="caption"><strong>${esc(p.title)}</strong><span>${esc([p.cat, p.year].filter(Boolean).join(' · '))}</span></div>
       </button>`).join('');
@@ -56,17 +56,24 @@
 
   // ----- Vimeo 플레이어 -----
   const dlg = $('#player');
-  const vid = (v) => String(v).match(/(\d{6,})/)?.[1] || ''; // 전체 주소를 넣어도 숫자만 추출
+  // 숫자 ID, 전체 주소, '링크가 있는 사람' 주소(vimeo.com/123456/abcdef 또는 ?h=abcdef) 모두 지원
+  const parseVimeo = (v) => {
+    const s = String(v);
+    const id = s.match(/(\d{6,})/)?.[1] || '';
+    const hash = s.match(/\d{6,}\/([0-9a-f]{6,})/i)?.[1] || s.match(/[?&]h=([0-9a-f]+)/i)?.[1] || '';
+    return { id, hash };
+  };
 
   $('#grid').addEventListener('click', (e) => {
     const t = e.target.closest('.thumb');
     if (!t) return;
     const p = PROJECTS[+t.dataset.idx];
-    const id = vid(p.vimeo);
-    $('#video').innerHTML = `<iframe src="https://player.vimeo.com/video/${id}?autoplay=1&title=0&byline=0&portrait=0&dnt=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${esc(p.title)}"></iframe>`;
+    const { id, hash } = parseVimeo(p.vimeo);
+    const h = hash ? `h=${hash}&` : '';
+    $('#video').innerHTML = `<iframe src="https://player.vimeo.com/video/${id}?${h}autoplay=1&title=0&byline=0&portrait=0&dnt=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${esc(p.title)}"></iframe>`;
     $('#pTitle').textContent = p.title;
     $('#pMeta').textContent = [p.cat, p.year].filter(Boolean).join(' · ');
-    $('#pLink').href = 'https://vimeo.com/' + id;
+    $('#pLink').href = 'https://vimeo.com/' + id + (hash ? '/' + hash : '');
     dlg.showModal();
     document.body.style.overflow = 'hidden';
   });
