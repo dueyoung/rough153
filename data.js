@@ -9,7 +9,7 @@ const SITE = {
   headline: 'We move<br>stories forward.',
   intro: '움직임으로 브랜드의 이야기를 전하는 모션그래픽 디자이너입니다.',
   about: 'After Effects, Cinema 4D',
-  clients: '[CLIENT A], [CLIENT B], [CLIENT C]',
+   phone: '010-1234-5678',
   email: 'heaven_153@naver.com',
   vimeo: 'https://vimeo.com/zinz77?fl=pl&fe=po',
   instagram: 'https://www.instagram.com/',
