@@ -4,11 +4,11 @@
 
 /* ---------- 사이트 기본 정보 ---------- */
 const SITE = {
-  name: '[YOUR NAME]',
+  name: 'ROUGH',
   tagline: 'Motion Graphics · 3D · Title Design',
   headline: 'We move<br>stories forward.',
-  intro: '움직임으로 브랜드의 이야기를 전하는 모션그래픽 디자이너입니다. [한두 줄 소개 문구를 입력하세요]',
-  about: '[작업 철학, 경력, 사용 툴(After Effects, Cinema 4D 등)을 소개하는 문단을 입력하세요.]',
+  intro: '움직임으로 브랜드의 이야기를 전하는 모션그래픽 디자이너입니다.',
+  about: 'After Effects, Cinema 4D',
   clients: '[CLIENT A], [CLIENT B], [CLIENT C]',
   email: 'hello@example.com',
   vimeo: 'https://vimeo.com/',
